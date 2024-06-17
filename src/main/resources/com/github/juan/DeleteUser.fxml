@@ -39,7 +39,7 @@
             <Font name="Cambria Math" size="12.0" />
          </font>
       </TextField>
-      <Text fill="#4851ff" layoutX="244.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce el username" textAlignment="CENTER" wrappingWidth="277.1031799316406">
+      <Text fill="#4851ff" layoutX="244.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce el usuario" textAlignment="CENTER" wrappingWidth="277.1031799316406">
          <font>
             <Font name="Cambria Math" size="24.0" />
          </font>
