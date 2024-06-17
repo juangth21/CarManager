@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="338.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.juan.view.CreateCarsController">
+   <children>
+      <TextField fx:id="model" layoutX="69.0" layoutY="78.0" prefHeight="36.0" prefWidth="198.0" promptText="Modelo">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+      <Text fill="#c7c9eb" layoutX="67.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir coches" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Math" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tuition" layoutX="69.0" layoutY="130.0" prefHeight="36.0" prefWidth="198.0" promptText="Matricula">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="crear" layoutX="85.0" layoutY="253.0" mnemonicParsing="false" onAction="#createCars" prefHeight="25.0" prefWidth="166.0" style="-fx-background-radius: 20; -fx-background-color: #62666e;" text="Añade tu coche" />
+      <ImageView fx:id="boton" fitHeight="36.0" fitWidth="36.0" layoutX="10.0" layoutY="24.0" onMouseClicked="#changeSceneToCarsConfig" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="boton" url="@MaterialSymbolsArrowCircleLeftOutlineRounded.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="weight" layoutX="70.0" layoutY="182.0" prefHeight="36.0" prefWidth="198.0" promptText="Peso">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

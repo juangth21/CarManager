@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="338.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.juan.view.CreateGarageController">
+   <children>
+      <TextField fx:id="location" layoutX="69.0" layoutY="78.0" prefHeight="36.0" prefWidth="198.0" promptText="Localizacion del garaje ">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+      <Text fill="#bdc0ff" layoutX="74.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir garaje" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Math" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="capacity" layoutX="70.0" layoutY="127.0" prefHeight="36.0" prefWidth="198.0" promptText="Capacidad">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="height" layoutX="69.0" layoutY="278.0" prefHeight="36.0" prefWidth="198.0" promptText="Altura">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="crear" layoutX="85.0" layoutY="343.0" mnemonicParsing="false" onAction="#createGarage" prefHeight="25.0" prefWidth="166.0" style="-fx-background-radius: 20; -fx-background-color: #62666e;" text="Añade tu garaje" />
+      <ImageView fx:id="boton" fitHeight="36.0" fitWidth="36.0" layoutX="10.0" layoutY="24.0" onMouseClicked="#changeSceneToGarageConfig" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="boton" url="@MaterialSymbolsArrowCircleLeftOutlineRounded.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="lengthy" layoutX="69.0" layoutY="174.0" prefHeight="36.0" prefWidth="198.0" promptText="Largo">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="width" layoutX="69.0" layoutY="225.0" prefHeight="36.0" prefWidth="198.0" promptText="Ancho">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.juan.view.GarageConfigController">
+   <children>
+      <Text layoutX="300.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de garajes">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="crear" layoutX="52.0" layoutY="363.0" mnemonicParsing="false" onAction="#changeSceneToCreateGarage" prefHeight="44.0" prefWidth="172.0" style="-fx-background-radius: 20;" text="Crear garaje">
+         <font>
+            <Font name="Cambria Math" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="26.0" layoutY="97.0" prefHeight="200.0" prefWidth="713.0">
+         <columns>
+            <TableColumn fx:id="Id" prefWidth="63.99997138977051" text="ID" />
+            <TableColumn fx:id="location" prefWidth="191.99996185302734" text="Localizacion" />
+            <TableColumn fx:id="capacity" minWidth="1.5999755859375" prefWidth="127.199951171875" text="Capacidad" />
+            <TableColumn fx:id="lengthy" minWidth="0.0" prefWidth="106.40005493164062" text="Largo" />
+            <TableColumn fx:id="width" minWidth="1.5999755859375" prefWidth="112.00006103515625" text="Ancho" />
+            <TableColumn fx:id="height" minWidth="1.5999755859375" prefWidth="116.0" text="Altura" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="volver" fitHeight="51.0" fitWidth="54.0" layoutX="26.0" layoutY="27.0" onMouseClicked="#changeSceneToMainPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MaterialSymbolsArrowCircleLeftOutlineRounded.png" />
+         </image>
+      </ImageView>
+      <Text fill="#4851ff" layoutX="292.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Que desea hacer?">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="eliminar" layoutX="559.0" layoutY="363.0" mnemonicParsing="false" onAction="#changeSceneToDeleteGarage" prefHeight="44.0" prefWidth="172.0" style="-fx-background-radius: 20;" text="Borrar garaje">
+         <font>
+            <Font name="Cambria Math" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="anadir" layoutX="300.0" layoutY="363.0" mnemonicParsing="false" onAction="#changeSceneToAddCarsGarage" prefHeight="44.0" prefWidth="172.0" style="-fx-background-radius: 20;" text="Configurar coches">
+         <font>
+            <Font name="Cambria Math" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
